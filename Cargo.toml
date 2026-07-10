@@ -1,0 +1,39 @@
+[package]
+name = "dcp-node"
+version = "0.0.1-5t"
+edition = "2021"
+authors = ["5t0000"]
+description = "DCP (Distanced Connect Protocol) - 去中心化匿名网络节点"
+
+[dependencies]
+# 异步运行时
+tokio = { version = "1.37", features = ["full"] }
+
+# 序列化
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
+
+# 密码学
+blake3 = "1.5"
+x25519-dalek = { version = "2.0", features = ["static_secrets", "zeroize"] }
+chacha20poly1305 = { version = "0.10", features = ["alloc"] }
+rand = "0.8.6"
+zeroize = "1.6"
+
+# 日志
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# 错误处理
+anyhow = "1.0"
+thiserror = "1.0.1"
+
+# 工具
+hex = "0.4"
+
+dashmap = "5.5"          # 并发安全的HashMap
+lru = "0.12"             # LRU缓存
+bytes = "1.5"            # 高效字节操作
+futures = "0.3"          # 异步流处理
+serde_json = "1.0"       # JSON序列化
+regex = "1.10"           # 正则表达式（钓鱼过滤）
