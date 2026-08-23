@@ -18,7 +18,6 @@ use crate::storage::StorageEngine;
 use crate::tunnel::TunnelManager;
 use tokio::net::UdpSocket;
 use tracing::{info, debug, warn, error};
-use tracing_subscriber;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {

@@ -80,7 +80,7 @@ pub struct X25519KeyPair {
 
 impl X25519KeyPair {
     pub fn generate() -> Self {
-        let secret = StaticSecret::random_from_rng(&mut rand::thread_rng());
+        let secret = StaticSecret::random_from_rng(rand::thread_rng());
         let public = PublicKey::from(&secret);
         Self { secret, public }
     }

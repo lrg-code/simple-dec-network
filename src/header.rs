@@ -84,7 +84,7 @@ impl DcpHeader {
         hasher.update(&header_bytes);
         hasher.update(payload);
         let result = hasher.finalize();
-        &result.as_bytes()[..4] == &self.checksum[..]
+        result.as_bytes()[..4] == self.checksum[..]
     }
 
     /// 序列化为字节数组 (不含 checksum, 用于计算校验和)
