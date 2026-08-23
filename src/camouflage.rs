@@ -3,7 +3,7 @@
 
 use rand::{Rng, RngCore};
 use std::collections::VecDeque;
-use std::net::{IpAddr, Ipv4Addr, Ipv6Addr, SocketAddr};
+use std::net::{IpAddr, Ipv4Addr, Ipv6Addr};
 
 /// CIP 池
 pub struct CIPPool {

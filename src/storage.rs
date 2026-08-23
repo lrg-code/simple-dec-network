@@ -4,9 +4,7 @@
 use blake3::Hasher;
 use dashmap::DashMap;
 use serde::{Deserialize, Serialize};
-use std::collections::HashMap;
 use std::sync::Arc;
-use std::time::{Duration, Instant};
 use tokio::sync::Mutex;
 
 /// 存储块 (1MB固定块)
@@ -102,7 +100,7 @@ impl StorageEngine {
     }
 
     /// 存储块 (需要押金)
-    pub async fn store_block(&self, block: StorageBlock, deposit: u64) -> Result<(), String> {
+    pub async fn store_block(&self, block: StorageBlock, _deposit: u64) -> Result<(), String> {
         let data_len = block.data.len() as u64;
         let used = *self.used_bytes.lock().await;
         if used + data_len > self.max_storage_bytes {

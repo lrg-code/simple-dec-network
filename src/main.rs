@@ -11,12 +11,11 @@ mod camouflage;
 mod storage;
 mod app;
 
-use crate::app::{AppManager, CtsMessage, DfsFile, DwsSite, ServiceType};
+use crate::app::{AppManager, DwsSite};
 use crate::camouflage::{CIPPool, DecoyScheduler};
 use crate::dht::KademliaTable;
 use crate::storage::StorageEngine;
 use crate::tunnel::TunnelManager;
-use crate::window::SlidingWindow;
 use tokio::net::UdpSocket;
 use tracing::{info, debug, warn, error};
 use tracing_subscriber;
@@ -38,10 +37,10 @@ async fn main() -> anyhow::Result<()> {
 
     // DHT 路由表
     let self_id = [0u8; 32]; // TODO: 从密钥生成
-    let dht = KademliaTable::new(self_id);
+    let _dht = KademliaTable::new(self_id);
 
     // 隧道管理器
-    let tunnel_mgr = TunnelManager::new(3);
+    let _tunnel_mgr = TunnelManager::new(3);
 
     // CIP 轮换池
     let mut cip_pool = CIPPool::new();
@@ -120,7 +119,7 @@ async fn main() -> anyhow::Result<()> {
             _ = tokio::time::sleep(tokio::time::Duration::from_millis(100)) => {
                 if decoy.should_send_decoy() {
                     let decoy_ip = cip_pool.next_ip();
-                    let decoy_data = decoy.generate_noise();
+                    let _decoy_data = decoy.generate_noise();
                     // 发送诱饵到随机目标 (隐蔽)
                     // TODO: 实际发送诱饵包
                     debug!("🧨 发送诱饵包 (源IP伪装: {})", decoy_ip);

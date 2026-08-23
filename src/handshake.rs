@@ -109,7 +109,7 @@ impl Session {
     }
 
     /// 处理 SYN-ACK，完成握手
-    pub fn handle_syn_ack(&mut self, header: &DcpHeader, payload: &[u8]) -> bool {
+    pub fn handle_syn_ack(&mut self, _header: &DcpHeader, payload: &[u8]) -> bool {
         if payload.len() < 32 {
             return false;
         }

@@ -33,7 +33,7 @@ impl SessionKey {
 
     /// 加密数据 (ChaCha20-Poly1305)
     pub fn encrypt(&mut self, plaintext: &[u8]) -> Vec<u8> {
-        use chacha20poly1305::aead::OsRng;
+        
         let cipher = ChaCha20Poly1305::new_from_slice(&self.key).unwrap();
 
         // 生成 Nonce (12 字节)
