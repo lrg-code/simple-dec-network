@@ -1,9 +1,0 @@
-/data/data/com.termux/files/home/simple-dec-network/target/debug/deps/chacha20-7985c4c5e0609e75.d: /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/lib.rs /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/backends.rs /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/legacy.rs /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/xchacha.rs /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/backends/soft.rs
-
-/data/data/com.termux/files/home/simple-dec-network/target/debug/deps/libchacha20-7985c4c5e0609e75.rmeta: /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/lib.rs /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/backends.rs /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/legacy.rs /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/xchacha.rs /data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/backends/soft.rs
-
-/data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/lib.rs:
-/data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/backends.rs:
-/data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/legacy.rs:
-/data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/xchacha.rs:
-/data/data/com.termux/files/home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chacha20-0.9.1/src/backends/soft.rs:
